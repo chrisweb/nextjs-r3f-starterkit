@@ -1,3 +1,57 @@
-:root {
 
+:root {
+    --main-background-value: 0 0 20;
+    --main-background-color: rgb(var(--main-background-value));
+    --main-text-value: 250 250 255;
+    --main-text-color: rgb(var(--main-text-value));
+    --main-frontFamily-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --main-fontSize-big1: 4rem; /* 40px */
+    --main-fontSize-big2: 2.25rem; /* 32px */
+    --main-fontSize-big3: 2rem; /* 28px */
+    --main-fontSize-big4: 1.75rem; /* 24px */
+    --main-fontSize-big5: 1.5rem; /* 22px */
+    --main-fontSize-big6: 1.25rem; /* 20 px */
+    --main-fontSize-default: 1.125rem; /* 18px */
+    --main-fontSize-small: 1rem; /* 16px */
+    --main-fontSize-smaller: 0.875rem; /* 14px */
+    --main-spacing: 32px;
+}
+
+/* high contrast mode */
+@media (prefers-contrast: more) {
+    :root {
+        --main-background-value: 0, 0, 0;
+        --main-text-value: 255, 255, 255;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--main-frontFamily-default);
+    font-size: var(--main-fontSize-default);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
 }
