@@ -45,6 +45,17 @@ body {
     font-size: var(--main-fontSize-default);
 }
 
+a {
+    color: var(--main-frontFamily-default);
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.2em;
+}
+
+a:hover {
+    color: cornflowerblue;
+    text-decoration-color: cornflowerblue;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
