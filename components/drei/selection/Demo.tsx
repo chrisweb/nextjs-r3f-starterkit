@@ -8,6 +8,7 @@ const PostProcessingDemo: React.FC = () => {
 
     return (
         <Canvas>
+            {/* drei selection "Maximum update depth exceeded" error */}
             <Selection>
                 <EffectComposer multisampling={8} autoClear={false}>
                     <Outline blur edgeStrength={100} width={1000} />
