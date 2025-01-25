@@ -6,6 +6,8 @@ import { EffectComposer, Outline, Selection, Select } from '@react-three/postpro
 
 const PostProcessingDemo: React.FC = () => {
 
+    // docs: https://react-postprocessing.docs.pmnd.rs/selection
+
     return (
         <Canvas>
             {/* drei selection "Maximum update depth exceeded" error */}
